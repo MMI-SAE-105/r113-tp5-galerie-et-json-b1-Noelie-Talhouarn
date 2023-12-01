@@ -14,16 +14,45 @@
     left: 0;/* Stay at the left */
     right: 0;/* Stay at the right */
     bottom: 0;/* Stay at the bottom */
-    background-color: rgba(0, 0, 0, 0.5);/* Black background with opacity */
+    background-color: rgba(0, 0, 0, 0.9);/* Black background with opacity */
     cursor: pointer;/* Add a pointer on hover */
     display: grid; /* Use a grid for easy centering */
     justify-content: center;
     align-items: center;/* Center vertically and horizontally */
 }
+.overlay::after {
+    content: X;/* Add content : "X" */
+    color: white;/* White text color */
+    background-color: black;/* Black background color */
+    font-family: sans-serif;/* Font family "sans-serif" */
+    text-align: center;/* Centered text */
+    line-height: normal;/* Line height ( idem height ) */
+    display: block;/* Display as a block */
+    position: absolute;/* Position absolute */
+    top: 1rem;/* 1rem from the top */
+    right: 1rem;/* 1rem from the right */
+    width: 2rem;/* 2rem width */
+    height: 2rem;/* 2rem height */
+    border: 2px solid white;/* White border of 2px */
+    border-radius: 10px;/* Rounded border */
+}
+
+.overlay>figure {
+    margin: 0;/* No margin */
+    padding: 1rem;/* 1rem padding */
+    border: 2px solid white;/* White border of 2px */
+}
+
+.overlay>figure>img {
+    max-width: 100%;/* Max width 100% for responsive image */
+    height: auto;/* Height auto for keeping the ratio */
+}
+
+
 </style>
 <body>
     <h1>Galerie</h1>
-<p>lorem⇥</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam alias, recusandae laboriosam odio rerum corrupti placeat consectetur! Fugit natus, perspiciatis voluptas, libero, dolor provident amet exercitationem possimus corporis aliquam molestiae.</p>
 <div class="overlay">
     <figure><img src="https://picsum.photos/id/237/400/300" alt="image 237... un chiot"></figure>
 </div>
