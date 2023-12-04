@@ -8,7 +8,7 @@
 </head>
 <style>
     .overlay {
-    position: fixed;/* Sit on top of the page content */
+    position: absolute;/* Sit on top of the page content */
     width: 100%;/* Full width (cover the whole page) */
     height: 100%;/* Full height (cover the whole page) */
     top: 0;/* Stay at the top */
@@ -54,12 +54,13 @@
 </style>
 <body x-data="{
    image: 'https://picsum.photos/id/237/400/300', 
-}">
+}"
+@keyup.escape.window="image = null">
     <h1>Galerie</h1>
 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam alias, recusandae laboriosam odio rerum corrupti placeat consectetur! Fugit natus, perspiciatis voluptas, libero, dolor provident amet exercitationem possimus corporis aliquam molestiae.</p>
 <div class="overlay"
     x-show="image"
-    @click="image ="null>
+    @click="image =null">
     <figure><img :src="image" alt="image 237... un chiot"></figure>
 </div>
 </body>
