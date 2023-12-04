@@ -54,13 +54,12 @@
 </style>
 <body x-data="{
    URLimage: 'https://picsum.photos/id/237/400/300', 
-}"
-@keyup.escape.window="URLimage = null">
+}">
     <h1>Galerie</h1>
 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam alias, recusandae laboriosam odio rerum corrupti placeat consectetur! Fugit natus, perspiciatis voluptas, libero, dolor provident amet exercitationem possimus corporis aliquam molestiae.</p>
 <div class="overlay"
     x-show="URLimage"
-    @click="URLimage =null">
+    @click="URLimage =null" @keyup.escape.window="URLimage = null">
     <figure><img :src="URLimage" alt="image 237... un chiot"></figure>
 </div>
 </body>
