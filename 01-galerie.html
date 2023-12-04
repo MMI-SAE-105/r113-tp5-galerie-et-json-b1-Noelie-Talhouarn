@@ -9,8 +9,8 @@
 <style>
     .overlay {
     position: absolute;/* Sit on top of the page content */
-    width: 100%;/* Full width (cover the whole page) */
-    height: 100%;/* Full height (cover the whole page) */
+    width: 100vw;/* Full width (cover the whole page) */
+    height: 100vh;/* Full height (cover the whole page) */
     top: 0;/* Stay at the top */
     left: 0;/* Stay at the left */
     right: 0;/* Stay at the right */
@@ -18,8 +18,8 @@
     background-color: rgba(0, 0, 0, 0.9);/* Black background with opacity */
     cursor: pointer;/* Add a pointer on hover */
     display: grid; /* Use a grid for easy centering */
-    justify-content: center;
-    align-items: center;/* Center vertically and horizontally */
+    place-content: center;/* Center vertically and horizontally */
+    
 }
 .overlay::after {
     content: "X";/* Add content : "X" */ 
