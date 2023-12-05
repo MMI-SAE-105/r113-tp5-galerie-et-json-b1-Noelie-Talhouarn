@@ -1,0 +1,6 @@
+<ul x-data="{
+  async données () {
+      const resp = await fetch ('data.json');
+      return await resp.json();
+ },
+}">
