@@ -49,25 +49,36 @@
     max-width: 100%;/* Max width 100% for responsive image */
     height: auto;/* Height auto for keeping the ratio */
 }
+.titre {
+    text-align: center;  
+    font-size: 40px;
+}
+.image {
+    margin: 10px;
+    padding: 3px;
+    border: 2px solid black;
+
+}
 
 </style>
 <body x-data="{
    URLimage: 'https://picsum.photos/id/14/400/300', 
 }">
-    <h1>Galerie</h1>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam alias, recusandae laboriosam odio rerum corrupti placeat consectetur! Fugit natus, perspiciatis voluptas, libero, dolor provident amet exercitationem possimus corporis aliquam molestiae.</p>
-<img src="/migniature/tomasz-filipek-CUWC-6MRcNg-unsplash (3).jpg" alt="mer"
+    <h1 class="titre">Galerie</h1>
+<p>Bienvenue dans ma galerie. Découvrez ses splendides paysages.</p>
+<img class="image" src="/migniature/tomasz-filipek-CUWC-6MRcNg-unsplash (3).jpg" alt="mer"
 @click="URLimage = 'img/tomasz-filipek-CUWC-6MRcNg-unsplash (4).jpg'"
 >
-<img src="/migniature/werner-sevenster-JuP0ZG0UNi0-unsplash (1).jpg" alt="la neige"
+<img class="image" src="/migniature/werner-sevenster-JuP0ZG0UNi0-unsplash (1).jpg" alt="la neige"
 @click="URLimage = 'img/werner-sevenster-JuP0ZG0UNi0-unsplash (2).jpg'"
 >
-<img src="/migniature/erol-ahmed-d3pTF3r_hwY-unsplash (1).jpg" alt="pissenlit"
+<img class="image" src="/migniature/erol-ahmed-d3pTF3r_hwY-unsplash (1).jpg" alt="pissenlit"
 @click="URLimage = 'img/erol-ahmed-d3pTF3r_hwY-unsplash (2).jpg'"
 >
-<img src="/migniature/peter-musk-pkg77ZtBCmg-unsplash (1).jpg" alt="escalier"
+<img class="image" src="/migniature/peter-musk-pkg77ZtBCmg-unsplash (1).jpg" alt="escalier"
 @click="URLimage = 'img/peter-musk-pkg77ZtBCmg-unsplash (2).jpg'"
 >
+
 <div class="overlay"
     x-show="URLimage"
     @click="URLimage =null" @keyup.escape.window="URLimage = null">
