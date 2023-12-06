@@ -62,7 +62,7 @@
 
 </style>
 <body x-data="{
-   URLimage: 'https://picsum.photos/id/14/400/300', 
+   URLimage: 'img/tomasz-filipek-CUWC-6MRcNg-unsplash (4).jpg', 
 }">
     <h1 class="titre">Galerie</h1>
 <p>Bienvenue dans ma galerie. Découvrez ses splendides paysages.</p>
@@ -78,7 +78,18 @@
 <img class="image" src="/migniature/peter-musk-pkg77ZtBCmg-unsplash (1).jpg" alt="escalier"
 @click="URLimage = 'img/peter-musk-pkg77ZtBCmg-unsplash (2).jpg'"
 >
-
+<img class="image" src="/migniature/karol-kaczorek-mWxhlAxJies-unsplash (1).jpg" alt="escalier"
+@click="URLimage = 'img/karol-kaczorek-mWxhlAxJies-unsplash (2).jpg'"
+>
+<img class="image" src="/migniature/finn-qAkmmPpOros-unsplash (1).jpg" alt="escalier"
+@click="URLimage = 'img/finn-qAkmmPpOros-unsplash (2).jpg'"
+>
+<img class="image" src="/migniature/csaba-talaber-pByF6_USbuc-unsplash (1).jpg" alt="escalier"
+@click="URLimage = 'img/csaba-talaber-pByF6_USbuc-unsplash (2).jpg'"
+>
+<img class="image" src="/migniature/waranont-joe-acJmkKwEMR4-unsplash (1).jpg" alt="escalier"
+@click="URLimage = 'img/waranont-joe-acJmkKwEMR4-unsplash (2).jpg'"
+>
 <div class="overlay"
     x-show="URLimage"
     @click="URLimage =null" @keyup.escape.window="URLimage = null">
