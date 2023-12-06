@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script defer src="https://unpkg.com/alpinejs"></script>
 </head>
 <body>
     <h1>JSON</h1>
@@ -26,12 +27,10 @@
     }
 ],
 }">
-<template x-for="donnée in données">
+<template x-for="dev in données">
     <li>
-        <span x-text="obj.nom">nom</span> :    
-        <a :href="donnée.url" target="_blank"></a>
-    </li>
-        
+        <span x-text="dev.nom">nom</span> :    
+        <a :href="dev.url" x-text="dev.projet"></a>
     </li>
  </template>
 </ul>
